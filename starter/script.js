@@ -13,6 +13,7 @@ document.querySelector('.score').textContent = 10
 
 
 document.querySelector('.btn.check').addEventListener("click", showNumber)
+document.querySelector('.btn.again').addEventListener("click", clearNumber)
 
 function showNumber(){
   const guess = document.querySelector('.guess').value
@@ -31,5 +32,10 @@ function showNumber(){
     document.querySelector('.message').textContent = "Correct Number" 
   }
 }
+
+function clearNumber(){
+    document.querySelector(".guess").value = ""
+}
+
 
 
